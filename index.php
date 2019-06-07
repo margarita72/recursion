@@ -53,15 +53,12 @@
 
     function has_child1($arr){
 
-        echo '<table><tr>';
+        echo '<tr>';
 
         foreach ($arr as $el) {
 
 
             if (is_array($el)) {
-                $a ='<tr><th>Employee</th><th>Salary</th><th>Salary</th></tr>';
-                echo $a;
-
 
                 has_child1($el);
 
@@ -71,7 +68,7 @@
 
 
         }
-        echo '</tr></table>';
+        echo '</tr>';
 
     }
 
@@ -80,9 +77,13 @@
 
 
     ?>
-    <?php
-    has_child1($myArray);
-    ?>
+    <table>
+        <tr><th>Employee</th><th>Salary</th><th>Salary</th></tr>
+        <?php
+        has_child1($myArray);
+        ?>
+    </table>
+
 </div>
 
 
