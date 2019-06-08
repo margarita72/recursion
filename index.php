@@ -16,7 +16,7 @@
                 data: {fname:name}
             }).done(function( result )
             {
-                $("#msg").html( " Address of Roll no is "+result );
+                $("#msg").html(result );
             });
         }
     </script
