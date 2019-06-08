@@ -7,6 +7,19 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function getdetails(){
+            var name = $('#name').val();
+            $.ajax({
+                type: "POST",
+                url: "calculation.php",
+                data: {fname:name}
+            }).done(function( result )
+            {
+                $("#msg").html( " Address of Roll no is "+result );
+            });
+        }
+    </script
 </head>
 
 <body>
@@ -152,31 +165,16 @@
                 </select>
             </div><br>
 
-            <button onclick="calculation()" id="calculation" name="calculation" >Рассчитать</button>
+            <button onClick = "getdetails()" id="calculation" name="calculation" >Рассчитать</button>
             <p></p>
+            <div id="msg"></div>
 
         </div>
     </div>
 
 
 
-    <script>
-        $(document).ready(function(){
-            $("button").click(function(){
-                var name = $('#name').val();
-                $.ajax({
-                    type: 'POST',
-                    url: 'calculation.php',
-                    data: {fname:name}
-                    success: function(data) {
-                        //alert(data);
-                        $("p").text(data);
 
-                    }
-                });
-            });
-        });
-    </script>
     <?php
 
 

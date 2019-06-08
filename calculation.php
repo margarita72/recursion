@@ -4,5 +4,5 @@
 
 }*/
 echo $name = $_POST['fname'];
-echo "You win";
+
 ?>
