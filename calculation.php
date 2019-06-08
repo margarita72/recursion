@@ -36,35 +36,37 @@ $myArrays = array(
         1 => "Топливный фильтр",
         2 => "BMW",
         3 => 17,
-        4 => 700
+        4 => 100
     ),
     array(
         0 => 6,
         1 => "Топливный фильтр",
         2 => "BMW",
         3 => 17,
-        4 => 700
+        4 => 7000
     )
 );
 $name = $_POST['fname'];
 echo $sort = $_POST['fsort'];
-mya($myArrays);
-function has_childfg($arr){
-    $name = $_POST['fname'];
-    //echo '<tr>';
-    foreach ($arr as $el) {
-        if (is_array($el)) {
-            has_childfg($el);
-        }
-        else if ($el==$name){
-            //echo '<td>';
-            echo $el;
-            //    echo '</td>';
-        }
-    }
-    //echo '</tr>';
+
+
+
+/*фильтр array_multisort массива*/
+$data_cost=array();
+foreach($myArrays as $key=>$arr){
+    $data_cost[$key]=$arr[4];
 }
 
+if ($sort==1){
+    array_multisort($data_cost, SORT_NUMERIC,  $myArrays);
+}else
+{
+    array_multisort($data_cost, SORT_DESC,  $myArrays);
+}
+
+//var_export($myArrays);
+
+mya($myArrays);
 
 function mya($arrs){
     $name = $_POST['fname'];
