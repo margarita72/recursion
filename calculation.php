@@ -47,7 +47,8 @@ $myArrays = array(
     )
 );
 $name = $_POST['fname'];
-echo $sort = $_POST['fsort'];
+$sort = $_POST['fsort'];
+//echo $input = $_POST['finput'];
 
 
 
@@ -58,19 +59,23 @@ foreach($myArrays as $key=>$arr){
 }
 
 if ($sort==1){
+    /*сортировка по возрастанию*/
     array_multisort($data_cost, SORT_NUMERIC,  $myArrays);
 }else
 {
+    /*сортировка по убыванию*/
     array_multisort($data_cost, SORT_DESC,  $myArrays);
 }
 
 //var_export($myArrays);
-
+echo "<table>";
+echo "<tr><th>id</th><th>Наименование</th><th>Комплектация</th><th>Кол-во</th><th>Цена</th></tr>";
 mya($myArrays);
+echo "</table>";
 
 function mya($arrs){
     $name = $_POST['fname'];
-    //echo '<tr>';
+    echo '<tr>';
     foreach ($arrs as $key =>$value) {
         if (is_array($value)) {
             if ($value[1]==$name){
@@ -81,13 +86,13 @@ function mya($arrs){
 
         }
         else
-            //echo '<td>';
+            echo '<td>';
             echo $value;
-            echo "<br>";
-            //    echo '</td>';
+            //echo "<br>";
+            echo '</td>';
 
     }
-    //echo '</tr>';
+    echo '</tr>';
 }
 
 ?>

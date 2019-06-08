@@ -11,13 +11,14 @@
         function getdetails(){
             var name = $('#name').val();
             var sort = $('#sort').val();
+            var input = $('#input').val();
             $.ajax({
                 type: "POST",
                 url: "calculation.php",
-                data: {fname:name,fsort:sort}
+                data: {fname:name,fsort:sort,finput:input}
             }).done(function( result )
             {
-                $("#msg").html(result );
+                $("#msg").html(result);
             });
         }
     </script
@@ -97,14 +98,14 @@
                         if (is_array($value_of_element)) {
 
 
-                            echo "<label><input type=\"checkbox\">".$key_of_element."</label>";
+                            echo "<label><input type=\"checkbox\" name=\"input[]\" value='$key_of_element'>".$key_of_element."</label>";
                             echo "<fieldset><legend></legend>";
                             filters($value_of_element);
                             echo "</fieldset>";
 
                         }
                         else{
-                            echo "<label><input type=\"checkbox\">".$value_of_element."</label>";
+                            echo "<label><input id='input' type=\"checkbox\" name=\"input[]\" value='$value_of_element' />".$value_of_element."</label>";
 
                         }
 
@@ -167,74 +168,16 @@
             </div><br>
 
             <button onClick = "getdetails()" id="calculation" name="calculation" >Рассчитать</button>
-            <p></p>
-            <div id="msg"></div>
+
+
 
         </div>
     </div>
 
+    <div id="msg"></div>
 
 
 
-    <?php
-
-
-    $myArray = array(
-        array(
-            0 => 1,
-            1 => "Воздушный фильтр",
-            2 => "BMW",
-            3 => 15,
-            4 => 1000
-        ),
-        array(
-            0 => 2,
-            1 => "Воздушный фильтр салона",
-            2 => "BMW",
-            3 => 15,
-            4 => 10500
-        ),
-        array(
-            0 => 3,
-            1 => "Клиновой ремень",
-            2 => "AUDI A4",
-            3 => 15,
-            4 => 500
-        ),
-        array(
-            0 => 4,
-            1 => "Топливный фильтр",
-            2 => "AUDI A3",
-            3 => 12,
-            4 => 700
-        ),
-        array(
-            0 => 5,
-            1 => "Топливный фильтр",
-            2 => "BMW",
-            3 => 17,
-            4 => 700
-        )
-    );
-    function has_child1($arr){
-
-        echo '<tr>';
-        foreach ($arr as $el) {
-            if (is_array($el)) {
-                has_child1($el);
-            }
-            else
-                echo '<td>'.$el.'</td>';
-        }
-        echo '</tr>';
-    }
-    ?>
-    <table>
-        <tr><th>id</th><th>Наименование</th><th>Комплектация</th><th>Кол-во</th><th>Цена</th></tr>
-        <?php
-        has_child1($myArray);
-        ?>
-    </table>
 
 </div>
 

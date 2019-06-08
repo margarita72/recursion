@@ -16,26 +16,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/mer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding>
-                <element signature="e#1135#1140#0#PHP" expanded="true" />
-                <element signature="e#1163#2956#0#PHP" />
-                <element signature="n#script#0;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#6168#6173#0#PHP" expanded="true" />
-                <element signature="e#8453#8458#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="334">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mer.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-395">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="378">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="e#1559#1564#0#PHP" expanded="true" />
+                <element signature="e#1591#3540#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,11 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calculation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="324">
+              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+              <folding>
+                <element signature="e#21#771#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +66,7 @@
       <find>Designed by</find>
       <find>table</find>
       <find>form</find>
+      <find>has_child1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +142,7 @@
       <workItem from="1559671676641" duration="142000" />
       <workItem from="1559672619869" duration="19068000" />
       <workItem from="1559836470055" duration="6412000" />
-      <workItem from="1559884412302" duration="28197000" />
+      <workItem from="1559884412302" duration="34968000" />
     </task>
     <task id="LOCAL-00001" summary="загаловок">
       <created>1559891061255</created>
@@ -178,11 +179,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560011895228</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="filter-2">
+      <created>1560014522036</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560014522036</updated>
+    </task>
+    <task id="LOCAL-00007" summary="filter-3">
+      <created>1560018530888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560018530888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53819000" />
+    <option name="totallyTimeSpent" value="60590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -219,7 +234,9 @@
     <MESSAGE value="ajax-1" />
     <MESSAGE value="ajax-2" />
     <MESSAGE value="filter-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter-1" />
+    <MESSAGE value="filter-2" />
+    <MESSAGE value="filter-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter-3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/background.jpg">
@@ -249,31 +266,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculation.php">
+    <entry file="file://$PROJECT_DIR$/mer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="334">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="378">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
-            <element signature="e#1135#1140#0#PHP" expanded="true" />
-            <element signature="e#1163#2956#0#PHP" />
-            <element signature="n#script#0;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#6168#6173#0#PHP" expanded="true" />
-            <element signature="e#8453#8458#0#PHP" expanded="true" />
+            <element signature="e#1559#1564#0#PHP" expanded="true" />
+            <element signature="e#1591#3540#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mer.html">
+    <entry file="file://$PROJECT_DIR$/calculation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="324">
+          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+          <folding>
+            <element signature="e#21#771#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
