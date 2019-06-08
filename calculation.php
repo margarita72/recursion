@@ -37,10 +37,18 @@ $myArrays = array(
         2 => "BMW",
         3 => 17,
         4 => 700
+    ),
+    array(
+        0 => 6,
+        1 => "Топливный фильтр",
+        2 => "BMW",
+        3 => 17,
+        4 => 700
     )
 );
 $name = $_POST['fname'];
-has_childfg($myArrays);
+echo $sort = $_POST['fsort'];
+mya($myArrays);
 function has_childfg($arr){
     $name = $_POST['fname'];
     //echo '<tr>';
@@ -53,8 +61,28 @@ function has_childfg($arr){
             echo $el;
             //    echo '</td>';
         }
+    }
+    //echo '</tr>';
+}
 
 
+function mya($arrs){
+    $name = $_POST['fname'];
+    //echo '<tr>';
+    foreach ($arrs as $key =>$value) {
+        if (is_array($value)) {
+            if ($value[1]==$name){
+                mya($value);
+            }
+            //echo $value[1];
+            //echo $key."--".$value;
+
+        }
+        else
+            //echo '<td>';
+            echo $value;
+            echo "<br>";
+            //    echo '</td>';
 
     }
     //echo '</tr>';

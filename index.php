@@ -10,10 +10,11 @@
     <script>
         function getdetails(){
             var name = $('#name').val();
+            var sort = $('#sort').val();
             $.ajax({
                 type: "POST",
                 url: "calculation.php",
-                data: {fname:name}
+                data: {fname:name,fsort:sort}
             }).done(function( result )
             {
                 $("#msg").html(result );
@@ -159,9 +160,9 @@
             </div>
             <div><br>
                 цена
-                <select>
-                    <option>по возрастанию</option>
-                    <option>По убыванию</option>
+                <select id="sort" name="sort">
+                    <option value="1">по возрастанию</option>
+                    <option value="2">По убыванию</option>
                 </select>
             </div><br>
 
