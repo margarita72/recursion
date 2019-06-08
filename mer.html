@@ -35,7 +35,26 @@
     </table>
 </div>
 
+function filters($arr1){
+foreach ($arr1 as $key_of_element => $value_of_element) {
+if (is_array($value_of_element)) {
 
+
+echo "<li>".$key_of_element."--".$value_of_element."</li>";
+echo "<ul>";
+    filters($value_of_element);
+    echo "</ul>";
+
+}
+else{
+echo "<li>".$value_of_element."</li>";
+
+}
+
+}
+
+
+}
 
 <div id="bottom_bar_black"> <div id="main_container">
     <div id="header_lower">  <div id="header_content_lowerline">Contact
