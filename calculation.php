@@ -80,16 +80,15 @@ function mya($arrs){
         if (is_array($value)) {
             if ($value[1]==$name){
                 mya($value);
-            }
-            //echo $value[1];
-            //echo $key."--".$value;
-
+            };
         }
-        else
+        else{
             echo '<td>';
             echo $value;
             //echo "<br>";
             echo '</td>';
+        }
+
 
     }
     echo '</tr>';
