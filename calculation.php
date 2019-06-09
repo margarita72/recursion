@@ -46,16 +46,21 @@ $myArrays = array(
         4 => 7000
     )
 );
-$name = $_POST['fname'];
+echo $name = $_POST['fname'];
 $sort = $_POST['fsort'];
 //echo $input = $_POST['finput'];
 //echo print_r($_POST)['finput'];
 echo print_r($_POST)['checked'];
-echo $_POST['pr'];
+echo $_POST['checked'][1];
+/*функция перебора массива комплектаций*/
+/*function picking($pic){
+   foreach ($pic as $values) {
+       $values;
+   }
+}*/
+/*picking(($_POST)['checked']);*/
 
-
-
-/*фильтр array_multisort массива*/
+/*фильтр array_multisort массива по цене*/
 $data_cost=array();
 foreach($myArrays as $key=>$arr){
     $data_cost[$key]=$arr[4];
@@ -78,12 +83,24 @@ echo "</table>";
 
 function mya($arrs){
     $name = $_POST['fname'];
+    $checked = ($_POST)['checked'];
     echo '<tr>';
     foreach ($arrs as $key =>$value) {
         if (is_array($value)) {
-            if ($value[1]==$name){
-                mya($value);
-            };
+            if ($value[1]==$name ){
+                foreach ($checked as $values) {
+                    if ($values==$value[2]){
+                        mya($value);
+                        //echo 'gcch';
+                    }
+
+                }
+
+
+
+            }
+            else if ($name=="") mya($value);
+
         }
         else{
             echo '<td>';

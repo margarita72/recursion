@@ -122,14 +122,7 @@
                 //echo '</ul>';
                 echo "</div>";
                 ?>
-                <label for="pr2">
-                    <input type="checkbox" value="2" id="pr" name="pr[]" class="pr" />
-                    2
-                </label>
-                <label for="pr1">
-                    <input type="checkbox" value="1" id="pr" name="pr[]" class="pr" />
-                    1
-                </label>
+
 
                 <script>
                     var t = document.getElementById("form");

@@ -5,6 +5,7 @@
       <change afterPath="$PROJECT_DIR$/../iq-online/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculation.php" beforeDir="false" afterPath="$PROJECT_DIR$/calculation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +27,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
               <folding>
                 <element signature="e#1559#1564#0#PHP" expanded="true" />
                 <element signature="e#1591#3540#0#PHP" />
+                <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -48,10 +50,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calculation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+            <state relative-caret-position="199">
+              <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
               <folding>
-                <element signature="e#21#771#0#PHP" />
+                <element signature="e#21#772#0#PHP" />
+                <element signature="e#154#278#1#PHP" />
               </folding>
             </state>
           </provider>
@@ -63,9 +66,9 @@
     <findStrings>
       <find>header_content_mainline</find>
       <find>Designed by</find>
-      <find>table</find>
       <find>form</find>
       <find>has_child1</find>
+      <find>table</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +144,7 @@
       <workItem from="1559671676641" duration="142000" />
       <workItem from="1559672619869" duration="19068000" />
       <workItem from="1559836470055" duration="6412000" />
-      <workItem from="1559884412302" duration="35614000" />
+      <workItem from="1559884412302" duration="44354000" />
     </task>
     <task id="LOCAL-00001" summary="загаловок">
       <created>1559891061255</created>
@@ -199,11 +202,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560021799478</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="filter-5">
+      <created>1560022418737</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560022418737</updated>
+    </task>
+    <task id="LOCAL-00010" summary="filter-6">
+      <created>1560072683046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560072683046</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61236000" />
+    <option name="totallyTimeSpent" value="69976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -243,7 +260,9 @@
     <MESSAGE value="filter-2" />
     <MESSAGE value="filter-3" />
     <MESSAGE value="filter-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter-4" />
+    <MESSAGE value="filter-5" />
+    <MESSAGE value="filter-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter-6" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/background.jpg">
@@ -266,13 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="200" column="2" selection-start-line="200" selection-end-line="200" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -280,23 +292,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="200" column="2" selection-start-line="200" selection-end-line="200" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="297">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
           <folding>
             <element signature="e#1559#1564#0#PHP" expanded="true" />
             <element signature="e#1591#3540#0#PHP" />
+            <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        <state relative-caret-position="199">
+          <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
           <folding>
-            <element signature="e#21#771#0#PHP" />
+            <element signature="e#21#772#0#PHP" />
+            <element signature="e#154#278#1#PHP" />
           </folding>
         </state>
       </provider>
