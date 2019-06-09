@@ -11,11 +11,14 @@
         function getdetails(){
             var name = $('#name').val();
             var sort = $('#sort').val();
-            var input = $('#input').val();
+            var checked = [];
+            $(':checkbox:checked').each(function () {
+                checked.push($(this).val());
+            });
             $.ajax({
                 type: "POST",
                 url: "calculation.php",
-                data: {fname:name,fsort:sort,finput:input}
+                data: {fname:name,fsort:sort,checked:checked}
             }).done(function( result )
             {
                 $("#msg").html(result);
@@ -98,14 +101,14 @@
                         if (is_array($value_of_element)) {
 
 
-                            echo "<label><input type=\"checkbox\" name=\"input[]\" value='$key_of_element'>".$key_of_element."</label>";
+                            echo "<label><input type=\"checkbox\">".$key_of_element."</label>";
                             echo "<fieldset><legend></legend>";
                             filters($value_of_element);
                             echo "</fieldset>";
 
                         }
                         else{
-                            echo "<label><input id='input' type=\"checkbox\" name=\"input[]\" value='$value_of_element' />".$value_of_element."</label>";
+                            echo "<label><input id='input' value='$value_of_element' type=\"checkbox\" name=\"input[]\">".$value_of_element."</label>";
 
                         }
 
@@ -119,6 +122,14 @@
                 //echo '</ul>';
                 echo "</div>";
                 ?>
+                <label for="pr2">
+                    <input type="checkbox" value="2" id="pr" name="pr[]" class="pr" />
+                    2
+                </label>
+                <label for="pr1">
+                    <input type="checkbox" value="1" id="pr" name="pr[]" class="pr" />
+                    1
+                </label>
 
                 <script>
                     var t = document.getElementById("form");

@@ -49,6 +49,9 @@ $myArrays = array(
 $name = $_POST['fname'];
 $sort = $_POST['fsort'];
 //echo $input = $_POST['finput'];
+//echo print_r($_POST)['finput'];
+echo print_r($_POST)['checked'];
+echo $_POST['pr'];
 
 
 
