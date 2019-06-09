@@ -1,7 +1,4 @@
 <?php
-
-
-
 $myArrays = array(
     array(
         0 => 1,
@@ -48,17 +45,8 @@ $myArrays = array(
 );
 echo $name = $_POST['fname'];
 $sort = $_POST['fsort'];
-//echo $input = $_POST['finput'];
-//echo print_r($_POST)['finput'];
-echo print_r($_POST)['checked'];
-echo $_POST['checked'][1];
-/*функция перебора массива комплектаций*/
-/*function picking($pic){
-   foreach ($pic as $values) {
-       $values;
-   }
-}*/
-/*picking(($_POST)['checked']);*/
+//echo print_r($_POST)['checked'];
+//echo $_POST['checked'][1];
 
 /*фильтр array_multisort массива по цене*/
 $data_cost=array();
@@ -87,19 +75,29 @@ function mya($arrs){
     echo '<tr>';
     foreach ($arrs as $key =>$value) {
         if (is_array($value)) {
-            if ($value[1]==$name ){
+            /*если комплектация выбранна*/
+            if (!empty($checked)){
                 foreach ($checked as $values) {
-                    if ($values==$value[2]){
+                    /*выбранна атолько комплектация, a наименование пустое*/
+                    if ($values==$value[2] and empty($name)){
                         mya($value);
                         //echo 'gcch';
                     }
+                    /*выбранно еще и наименоване*/
+                    else if ($value[1]==$name and $values==$value[2]){
+                        mya($value);
+                    }
 
                 }
-
-
-
+                //echo 'не пустой ';
             }
-            else if ($name=="") mya($value);
+            /*если комплектация не выбрана проверить выбрано ли наименование*/
+            else
+            if ($value[1]==$name ){
+                mya($value);
+            }
+            /*если наименование и комплектация пусты*/
+            else if (empty($name) and empty($checked)) mya($value);
 
         }
         else{
